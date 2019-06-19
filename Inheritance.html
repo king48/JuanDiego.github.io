@@ -1,0 +1,93 @@
+<!--
+JuanDiego Castano 
+Ms Kresteva
+03/04/2019
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inheritance in Java</title>
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="img/codi.png" type="image/x-icon"> 
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js"></script>
+</head>
+<body>
+<div class="container"> 
+<nav>
+  <a href="index.html">
+    <h4>My Portfolio</h4>
+  </a>
+  <ul>
+    <li><a href="References.html">References</a></li>
+    <li><a href="Recursion.html">Recursion</a></li>
+
+    <li><a href="Arrays.html">Arrays</a>
+      <ul>
+        <li><a href="Arrays.html">Array and Array Lists</a></li>
+        <li><a href="Search&Sort.html">Search and Sort </a></li>
+      </ul>
+    </li>
+    <li><a href="objectsinjava.html"> Object Oriented Programming </a>
+      <ul>
+        <li><a href="objectsinjava.html">Objects in Java</a></li>
+        <li><a href="Inheritance.html">Inheritance</a></li>
+        <li><a href="DontFearTheOOP.html">OOP Example</a></li>
+
+      </ul>
+    </li>
+    <li><a href="index.html">About Me</a> </li>
+  </ul>
+</nav>
+  
+  <section class="portfolio" id="portfolio">
+    <h1 class="portfolio_header">Inheritance in Java</h1>
+  </section>
+  <section class ="wrapper">
+    <h2 class="headers">What is Inheritance?</h2>
+    <p class="text">
+    Using inheritance we can define a relationship between one more more objects. Its as simple as us inheriting our basic
+    traits and characteristics from our parents but in this case we are inheriting it from one parent, and the traits and
+    characteristics are passed exactly how they were written - although, that can be changed by overriding methods. 
+    </p>
+    <img src="img/classTree.png" alt="" width="700" length="700" style="float: left;">
+    <h2 class="headers">Superclasses and Subclasses</h2>
+    <p class="text">
+      All objects can be defined using a superclass which outlines basic attributes and behaviours of an object, these will
+      get passed down to all the subclasses that extend the superclass. For example, all humans have 4 limbs, 10 fingers and
+      10 toes, but as we begin talking about things that are more specific details there are many different types of
+      humans(Cockaisians, Asians, African-Americans) with little differences in characteristics and behaviours. In this case
+      we can say an Asian is-a human, this one way we can show the relationship between classes. We will get more in depth
+      into how to implement inheritance in the next section.
+    </p>
+    
+    <h2 class="headers">Upcasting and Downcasting </h2>
+    <p class="text_column">
+      With upcasting and downcasting we can use the relationships we previously established to our advantage. When you are
+      upcasting essentially what you are doing is casting to a subtype, this is done automatically and isn't too difficult.
+      Why would anyone use this? It’s done to treat a subclass as a superclass type, for example, a Camera is a Machine, we can
+      for a split moment label the camera as the machine that it is.<br>
+      <b class="codeFont">Camera c = new Camera (); <br></b>
+      <b class="codeFont"> Machine m = c; <br> </b>
+      <b class="codeFont"> // this is an example of upcasting <br></b>
+      Things can't really fail when upcasting, however, downcasting becomes more complicated.   
+      </p>
+<p class="text_column">
+      Let's say we want to label the machine as a camera that would work. However, where
+      it could fail is when we want to label the camera as a television. A television is a machine but it is not a camera, if
+      this is done you will get an error. Its important to explicitly state (Camera) in order to successfully downcast.
+      <b class="codeFont">Camera c = new Camera (); <br></b>
+      <b class="codeFont"> Machine m = new Machine (); <br> </b>
+      <b class="codeFont"> Camera c2 = (Camera) m;<br></b>
+      One last thing I must mention about upcasting and downcasting, an object will lose
+      all its properties inherited below its position. So for example if you consider a phone to be a camera, and cast a phone
+      to be a machine it will lose its phone and camera properties.
+    </p>
+  </section>
+  <footer class="footer">
+    <h4 class="footer_header">My Amazing Portfolio</h4>
+  </footer>
+</div>
+</body>
+</html>
+  

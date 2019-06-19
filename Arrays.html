@@ -1,0 +1,92 @@
+<!--
+JuanDiego Castano 
+Ms Kresteva
+05/10/2019
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays in Java</title>
+  
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="img/codi.png" type="image/x-icon"> 
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js"></script>
+</head>
+<body>
+<div class="container"> 
+    <nav>
+      <a href="index.html">
+        <h4>My Portfolio</h4>
+      </a>
+      <ul>
+        <li><a href="References.html">References</a></li>
+        <li><a href="Recursion.html">Recursion</a></li>
+    
+        <li><a href="Arrays.html">Arrays</a>
+          <ul>
+            <li><a href="Arrays.html">Array and ArrayLists</a></li>
+            <li><a href="Search&Sort.html">Search and Sort </a></li>
+          </ul>
+        </li>
+        <li><a href="objectsinjava.html"> Object Oriented Programming </a>
+          <ul>
+            <li><a href="objectsinjava.html">Objects in Java</a></li>
+            <li><a href="Inheritance.html">Inheritance</a></li>
+            <li><a href="DontFearTheOOP.html">OOP Example</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">About Me</a> </li>
+      </ul>
+    </nav>
+  
+  <section class="portfolio" id="portfolio">
+    <h1 class="portfolio_header">Arrays and ArrayLists</h1>
+  </section>
+  <section class="wrapper">
+    <h2 class="headers">Arrays</h2>
+    <p class="text_column">
+      An Array is data structure that very useful for storing large amounts of data of the same type in an easy to access way. Keep in mind an 
+      array is not a primitve data type,  it is an object. This is why it is declared by saying: <b><i>type</i>[] name = new <i>type</i> [SIZE]</b>
+      - here we are creating a new array object, bear in mind the size is always a constant. We can also initalize an array by saying: <b><i>type</i> [] name = {data, data,...}</b>. This is 
+      an easy way to initalize an array with preset values. One thing to keep in mind about arrays is that if you try to access 
+      an element in an array that is greater than the set size you will get an error. 
+    </p>
+    <p class="text_column">
+      Arrays are unique in that they have some confusing syntax. First and foremost arrays start at zero, but when 
+      you want to get the length of an array not only do you have to remmeber there are no brackets - arr.length - but that the 
+      value returned is the number of elements. So in an array with ten elements you can only go from 0 - 9, but this method will
+      output 10, therefore, when you want to use it in your program to refrence the final element in an array 
+      you must do arr.length - 1. Now, how can we use that length? We can traverse though an array using a for loop. 
+      All that has to be done is:<b> for (int a = 0; a < arr.length - 1; a ++)</b> 
+  </p>
+    <center>
+      <img src="img/Arr.png" alt="" style="">
+    </center>
+  
+  <p class="text">
+    We can think of two dimensional arrays as simply two 1D arrays, with one being the rows and the other being the columns.
+    A two dimensional array declared like so:<b> <i>type</i>[][] name = new <i>type</i> [SIZE1][SIZE2];</b>  it can also be declared like so:
+    <b> <i>type</i> [][] name = {{data,..},{data,..}} </b>. When attempting to access an element in an array we need to specify the element
+    we would like to access with both the rows and columns. Two dimensional arrays are very useful when working with mazes,
+    grids etc.
+  </p>
+  <h2 class="headers">ArrayLists </h2>
+  <p class = "text">
+    ArrayLists are a very useful type of array that uses different methods in order to add, remove and manipulate an
+    array during runtime. An array list starts off with a size of ten even when not specified and then doubles everytime
+    it needs more space in the array, this cannot be done in a conventional array and is a big advantage of using an
+    arraylist.This is how an arraylist is declared: <b>ArrayList <<i>type</i>> name = new ArrayList <<i>type</i>>() </b>. 
+    Array lists have a number of different methods, when using them always put the name of the arraylist first and then the 
+    method overloaded with something. <b>arrList.get(index)</b>. The most common methods are get, set, add and remove. All 
+    of these methods can be overloaded and they will return a curtain value. 
+  </p>
+     
+  </section>
+  <footer class="footer">
+    <h4 class="footer_header">My Amazing Portfolio</h4>
+  </footer>
+</div>
+</body>
+</html>
+  

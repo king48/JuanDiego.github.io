@@ -1,0 +1,1294 @@
+<html>
+    <head><style type = "text/css"> <!-- .tab {margin-left:40px}<!-- .tab2 {margin-left:80px}</style>
+    <title>Don't Fear The OOP</title>
+    <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/codi.png" type="image/x-icon">
+    <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js"></script>
+
+    </head>
+    <body bgcolor = "FFFFFF">
+        <div class = "container">
+            <nav>
+                <a href="index.html">
+                    <h4>My Portfolio</h4>
+                </a>
+                <ul>
+                    <li><a href="References.html">References</a></li>
+                    <li><a href="Recursion.html">Recursion</a></li>
+                    <li><a href="Arrays.html">Arrays</a>
+                        <ul>
+                            <li><a href="Arrays.html">Array and ArrayLists</a></li>
+                            <li><a href="Search&Sort.html">Search and Sort </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="objectsinjava.html"> Object Oriented Programming </a>
+                        <ul>
+                            <li><a href="objectsinjava.html">Objects in Java</a></li>
+                            <li><a href="Inheritance.html">Inheritance</a></li>
+                            <li><a href="DontFearTheOOP.html">OOP Example</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">About Me</a> </li>
+                </ul>
+            </nav>
+        <section class="portfolio" id="portfolio">
+            <h1 class="portfolio_header">Don't Fear the OOP</h1>
+        </section>
+        <center>
+        <font face = "CALIBRI">
+            <P>
+         
+                <font color = "c69517"><font size =+3>
+                    <br/>
+                    -or- 
+                    <br/>
+                    A java tutorial that shows you why coding java 
+                    <br/>
+                    (or any other object oriented programming) 
+                    <br/>
+                    is just like writing a Spongebob Episode.
+                </font></font>
+                <font color = "52f226"><font size = +2>
+                    <br/>
+                    -or- 
+                    <br/>
+                    How to understand Java by looking at pretty colors.
+                </font></font>
+            </P>
+            <p>
+                <Table border ="2" style = "width:550px">
+                    <tr><td>
+                        <font color = "000000">
+                            <center>
+                                The analogy of this tutorial is simple: think of a java programmer as a
+                                <br/>
+                                writer, composing a Spongebob Episode. All of the characters and settings are
+                                <br/>
+                                "off-the-shelf", and need to only be modified slightly to fit into a new
+                                <br/>
+                                episode. All that's left to write is a script for a plot that
+                                <br/>
+                                pulls all those pre-existing elements together.
+                                <br/>
+                                That, in a nutshell, is java programming. Think of it as Dean Koontz
+                                <br/>
+                                for smart people. Now, that might be all you want to know. If so,
+                                <br/>
+                                thanks for stopping by! If things still could use some clearing up
+                                <br/>
+                                (perhaps by way of a couple dozen pages of examples), then read on!
+                            </center>
+                        </font>
+                    </td></tr>
+                </Table>
+            </p>
+            <font color = "000000">
+            <P>
+                Learning Object Oriented Programming concepts in Java can be difficult. This rendition of 
+                <br/>
+                Johannes Clarbouts Don't Fear The OOP! Will attempt to explain object oriented Programming 
+                <br/>
+                using analogies to Spongebob on how these concepts work. 
+            </P>
+            <P>
+                Similar to Claerbout, our text will be color coded. </font> 
+                <font color = "52f226"> 
+                    Green is the most basic introduction, and is 
+                    <br/> 
+                    written in sentences. 
+                </font>
+                <font color = "c69517">
+                    Yellow slightly more advanced and essentially pseudo code.
+                </font>
+                <font color = "ff0000">
+                    Red is more
+                    <br/>
+                    challenging and is written as proper code.
+                </font>
+                <font color = "000000">
+                    Words that are bolded are important terms that are
+                    <br/>
+                    used by programmers. 
+            </P>
+            <P>
+                Meet Mr. Squarepants, Mr. Squarepants lives a life underwater. His TV show is a documentary
+                <br/>
+                about his life as a fry cook underwater. Spongebob's viewers are never disappointed because his 
+                <br/>
+                shows when watched back to back appear as one continuous episode. How does he manage this?
+            </P>
+            <P>
+                Well, before Spongebob's creators produce anything, they first write their ideas down at their 
+                <br/>
+                desks, sweep aside the empty 5 hour energy bottles. It is on this single page which they will plan 
+                <br/>
+                Spongebob's whole life.
+            </P>
+            <P>
+                How can Spongebob's creators get the whole story onto only one page? Simple -  everything 
+                <br/>
+                they produce onto the page is simply a series of events or plots. Setting, character 
+                <br/>
+                development, and how the characters interact is all taken care of elsewhere. How do they do
+                <br/>
+                that? Let's find out.
+            </P>
+            <P>
+                You see, Spongebob's creators, more than anything else, are very consistent in the TV show. It's 
+                <br/>
+                what has made it so popular. Let's say that they have sat down to produce their hundredth 
+                <br/>
+                episode.
+            </P>
+            <P>
+                The first thing that the producers need is a setting, so they dust off an old binder they have 
+                <br/>
+                labeled "Underwater Towns".
+            </P>
+            <table border = "2" bordercolor = "52f226" style = "width:550px">
+                    <tr><td>
+                        <font color = "52f226">
+                            <center>
+                                Every Underwater Town has a few key elements: Houses, a couple of Penises 
+                                <br/>
+                                and grandmas. Bikini Bottom will have 1 house, 2 Penises and 1 grandma and 
+                                <br/>
+                                will be located just north of Goo Lagoon in the early 2000's.
+                            </center>
+                        </font>
+                    </td></tr>
+            </table> 
+            <P>
+                <font color = "52f226">
+                    The description of an Underwater Town, although not perfect, performed two key tasks: 1) it 
+                    <br/>
+                    established the key ingredients in a quality Underwater Town and 2) It provides several pieces of 
+                    <br/>
+                    information that makes the town more memorable.
+                </font>
+            </P>
+            <table border = "2" bordercolor = "c69517" style = "width:550px">
+                <tr><td>
+                    <font color = "c69517">
+                        UnderwaterTown
+                        <P class = "tab">            
+                            Has a certain number of Penises 
+                            <br/>
+                            Has a certain number of houses
+                            <br/>
+                            Is located somewhere
+                            <br/>
+                            Exists at a certain time
+                        </P>
+                        BikiniBottom would have:
+                        <P class = "tab">
+                            Number of houses = 1
+                            <br/>
+                            Location = North of Goo Lagoon
+                            <br/>
+                            Time period = 2000's
+                        </P>
+                    </font>
+                </td></tr>
+            </table>
+            <font color = "c69517">
+                <P>
+                    It may seem that Spongebob's creators, the producers, have a strange way of writing, but to 
+                    <br/>
+                    them it makes sense. The first line states that they are defining an UnderwaterTown. Notice that
+                    <br/>
+                    they do not use a space between the words. This is because they fear that a space may confuse 
+                    <br/>
+                    their stickler artists.
+                </P>
+                <P>
+                    The next step, logically, is to declare the types of <B> variables </B> (things that define how the 
+                    <br/>
+                    Underwater Town looks) that a <B> class </B> of an Underwater Town might have - such as houses and a 
+                    <br/>
+                    certain number of Penises etc. That being said, all that's left to do is to <B> construct </B> a sample
+                    <br/>
+                    town, with default values for its variables.
+                </P>
+                <P>
+                    <table border = 2 bordercolor = "ff0000" style="width:550px">
+                        <tr>
+                            <td>
+                                <font color = "ff0000">
+                                    Public class UnderwaterTown{
+                                    <P class = "tab">
+                                        int numberOfPenises;
+                                        <br/>
+                                        int numberOfHouses;
+                                        <br/>
+                                        String location;
+                                        <br/>
+                                        int time;
+                                        <br/><br/>
+                                        Public BikiniBottom(){
+                                    </P>
+                                    <P class = "tab2">
+                                        numberOfHouses = 1;
+                                        <br/>
+                                        location = "North of Goo Lagoon";
+                                        <br/>
+                                        time = 2000;
+                                    </P>
+                                    <P class = "tab">
+                                        }
+                                    </P>
+                                    }   
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                </P>
+                <font color = "ff0000">
+                    <P>
+                        In making Bikini Bottom, the producers have defined a <B> class </B>, but not Bikini Bottom in particular
+                        <br/>
+                        (that would be an <B> object </B>). A class is like a cookbook recipe without the measurements -  it says 
+                        <br/>
+                        what should be included in the Underwater Town, but not what quantities to include them in.
+                    </P>
+                    <P>
+                        This is the process of <B>declaring </B> what the <B>variables </B> will be called, and what sort of values they
+                        <br/>
+                        will contain. For now, just worry about "ints",  "Strings" and "booleans". "int" stands for integer,
+                        <br/>
+                        "String" for a string of letters, and "Boolean" refers to a true or false statement.
+                    </P>
+                    <P>
+                        The semicolon is the producers' way of letting each other know that they are done with the 
+                        <br/>
+                        preceding statement and that they have moved onto the next one. For the most part, you can
+                        <br/>
+                        think of it like a period.
+                    </P>
+                    <P>
+                        Finally, you may have noticed that whenever the producers want to group a particular set of 
+                        <br/>
+                        statements, they will use curly brackets, "{". Even though they all know their characters well, 
+                        <br/>
+                        this lets them quickly see where statements begin and end. Any <B> class </B> will always end with all 
+                        <br/>
+                        the open curly braces being closed.
+                    </P>
+                    <P>
+                        If the producers do create (<B>instantiate</B>) Bikini Bottom (<B>object</B>) eventually in their TV show, their 
+                        <br/>
+                        artists will look to the same Underwater Town <B>class </B> to determine what that town should look
+                        <br/>
+                        like (The producers will send their binders full of classes to their artists. But where will their 
+                        <br/>
+                        artists find out the number of Penises and such? This is where we get into the constructor.
+                    </P>
+                    <P>
+                        The constructor comes after all of the variables have been declared. It starts with public 
+                        <br/>
+                        BikiniBottom(). The statements that follow are the default values for their  variables; how the 
+                        <br/>
+                        producers' Bikini Bottom <B>object </B>  would look like if they had simply <B> instantiated </B> it in the TV show 
+                        <br/>
+                        without specifying any of its values.
+                    </P>
+                </font>
+                <font color = "000000">
+                    <P>
+                        So now, we've sneaked a peek at the producers' binders. They have reviewed the Underwater 
+                        <br/>
+                        Town section and think that this episode should take place in an underwater town. Now they 
+                        <br/>
+                        are ready to write the first part of their show. They turn to the <B>main </B> of their binders and
+                        <br/>
+                        begin writing.
+                    </P>
+                </font>
+                <P>
+                    <table border = "2" bordercolor ="52f226" style="width:550px">
+                        <tr>
+                            <td>
+                                <P class = "tab">
+                                    <font color = "52f226">
+                                        Granny gets a visitor
+                                        <br/>
+                                        This story takes place in a house located within Bikini Bottom. It has 2 
+                                        <br/>
+                                        Penises and 1 grandma.
+                                    </font>
+                                </P>
+                            </td>
+                        </tr>
+                    </table>
+                </P>
+                <P>
+                    <font color = "52f226">
+                        In just a few lines, the producers have conveyed a lot of information. When they send the 
+                        <br/>
+                        information off to their artists along with the binders of information, the artists will look up 
+                        <br/>
+                        "BikiniBottom" and will be able to fill in information that is constant about the town, such as the 
+                        <br/>
+                        number of Penises. In addition, the publishers have added information about the number of 
+                        <br/>
+                        Penises. Because the number of Penises wasn't specified within the binder, the artist was 
+                        <br/>
+                        happy to see how many there are specified in this plot. Although the show's plot only has two
+                        <br/>
+                        lines, because of their reference to their binder, their TV show already contains quite a bit of 
+                        <br/>
+                        content.
+                    </font>
+                </P>
+            </font>
+            <P>
+                <table border = "2" bordercolor = "c69517" style="width:550px">
+                    <tr>
+                        <td>
+                            <font color = "c69517">
+                                Main class:
+                                <P class = "tab">
+                                    Underwater Town BikiniBottom is a new Underwater Town
+                                </P>
+                                <P class = "tab2">
+                                    The number of Houses is one
+                                    <br/>
+                                    The number of Sponges is two
+                                    <br/>
+                                    The number of grandmas is one
+                                </P>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </P>
+            <P>
+                <font color = "c69517">
+                    The producers take two very important steps very early on in their plan, they <B>instantiates an 
+                    <br/>
+                    object </B> of type BikiniBottom. Having created their first <B>object </B>, they go on to fill out the 
+                    <br/> 
+                    information that was initially lacking in the UnderwaterTown <B>class</B>: (Number of houses and 
+                    <br/>
+                    number of sponges).
+                </font>
+            </P>
+            <P>
+                <table border ="2" bordercolor = "ff0000" style="width:550px">
+                    <tr>
+                        <td>
+                            <font color = "ff0000">
+                                Public class VisitingGrandma{
+                                <P class ="tab">
+                                    Public static void (String arguments[]){
+                                </P>
+                                <P class = "tab2">
+                                    UnderwaterTown BikiniBottom = new UnderwaterTown;
+                                    <br/>
+                                    BikiniBottom.numberOfHouses = 1;
+                                    <br/>
+                                    BikiniBottom.numberOfSponges = 2;
+                                    <br/>
+                                    BikiniBottom.numberOfGrandmas = 1;
+                                </P>
+                                <P class = "tab">
+                                    }
+                                </P>
+                                }
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </P>
+            <font color = "ff0000">
+                <P>
+                    The publishers have a strange way of saying things, don't they? It would be possible to explain 
+                    <br/>
+                    what each word in those first two lines do, but it wouldn't make much sense to you at this 
+                    <br/>
+                    point, and it would really tax my small brain, so let's skip it for now? What's important to know
+                    <br/>
+                    is that that line is how the producers let their artists know that this piece of paper is the <B> main 
+                    <br/>
+                    routine </B>, or plot.
+                </P>
+                <P>
+                    When the producers decided to specify those <B> variables </B>(in this case, BikiniBottom. Remember 
+                    <br/>
+                    that BikiniBottom is an object of UnderwaterTown) Followed by a period then by the name of 
+                    <br/>
+                    the <B>variable</B>. Having done this, the publishers can then provide a value for the variables such as 2
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    So, believe it or not, you've just seen object-oriented programming in action. Our publishers 
+                    <br/>
+                    have first created the class (that was the binder) that created a general definition of what an 
+                    <br/>
+                    UnderwaterTown was, the producers then turned to their <B> main </B> layer and created 
+                    <br/>
+                    (<B>instantiated</B>) an UnderwaterTown <B>object</B> which they called BikiniBottom.
+                </P>
+                <P>
+                    Now, for the grandma, the producers need a different binder. So they put "UnderwaterTown" 
+                    <br/>
+                    back on the shelf, and go to pick up a new binder. They pass over many different titles, like 
+                    <br/>
+                    "Pets", "Restaurants", "Weather", "Music", all the essentials for a good Spongebob episode, until
+                    <br/>
+                    they finally come to the binder they want: "Sponges". They open up to the introduction:
+                </P>
+            </font>
+            <table border = "2" bordercolor = "52f226"  style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            "All sponges start out with two legs, two arms, a pair of eyes and a mouth. They are either
+                            male or female, have a name, and have a memorable shape, If someone asks for their name, 
+                            they will tell you."
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "52f226">
+                <P>
+                    You'll notice that they like to make all body parts variables. This gives them the freedom to 
+                    <br/>
+                    change their values  for different characters later in the story. You'll note that they left out the
+                    <br/>
+                    sex, name, and memorable shape as no two sponges are completely alike. The publishers prefer 
+                    <br/>
+                    to specify those variables when they  write the plot.
+                </P>
+            </font>
+            <table border = "2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            Sponges
+                            <P class = "tab">
+                                Have a certain number of legs
+                                <br/>
+                                Have a certain number of arms
+                                <br/>
+                                Have a certain number of eyes
+                                <br/>
+                                Have a certain number of mouths
+                                <br/>
+                                Have a name
+                                <br/>
+                                Have a certain sex
+                                <br/>
+                                Have a memorable shape
+                            </P>
+                            A standard sponge would start off with 
+                            <P class = "tab">
+                                Two legs
+                                <br/>
+                                Two arms
+                                <br/>
+                                Two eyes
+                                <br/>
+                                One mouth
+                            </P>
+                            When someone asks them for their name
+                            <P class = "tab">
+                                Tell them your name.
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "c69517">
+                <P>
+                    You, being as sharp as you are, have probably noticed that the producers have developed some 
+                    <br/>
+                    interactivity into the sponge characters of the show, when asked for their name, they will 
+                    <br/>
+                    respond. This is called a <B> method </B> and is your key to a good time. We'll get to it in just a few pages
+                </P>
+            </font>
+            <table border = "2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            Public class Sponges {
+                            <P class = 'tab'>
+                                int legs;
+                                <br/>
+                                int arms;
+                                <br/>
+                                int eyes;
+                                <br/>
+                                int nose;
+                                <br/>
+                                int mouth;
+                                <br/>
+                                String name;
+                                <br/>
+                                String sex;
+                                <br/>
+                                String memorableShape;
+                                <br/>
+                                Public Sponges(){
+                            </P>
+                            <P class = 'tab2'>
+                                legs = 2;
+                                <br/>
+                                arms = 2;
+                                <br/>
+                                eyes = 2;
+                                <br/>
+                                nose = 1;
+                                <br/>
+                                mouth = 1;    
+                                <br/>                        
+                            </P>
+                            <P class = "tab">
+                                }
+                                <br/><br/>
+                                Public String identifyName (){
+                            </P>
+                            <P class = "tab2">
+                                return name;
+                            </P>
+                            <P class = "tab">
+                                }
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "ff0000">
+                <P>
+                    Wow, almost all of it should start making sense to you now, except for that "Public String
+                    <br/>
+                    identifyName()". Don't worry, we will get into all that in just a little bit.
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    However, as interesting as these descriptions of humans may be, they're not very specific. The 
+                    <br/>
+                    publishers promised their artists a new story by Friday, so they decide to get down to business. 
+                    <br/>
+                    Flipping through the "Sponges" binder, they come to the first chapter, titled "Grandmas"
+                </P>
+            </font>
+            <table border = "2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                                SpongeGrandma are based on the idea of sponges, they are identical except they have some 
+                                unique attributes, namely, wrinkles to indicate their old age, they wear a dress, they have hair
+                                on their heads, wear glasses, will have a unique personality, the number of sweaters knitted that day,
+                                and the number of grandchildren that have visited that day.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "52f226">
+                <P>
+                    Nothing really new here, except that we have peered deeper into the publishers' binders 
+                    <br/>
+                    (<B>classes</B>). This particular subsection, SpongeGrandma, <B>extended</B> the idea of sponges.
+                </P>
+            </font>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            SpongeGrandma extends the idea of Sponges.
+                            <P class = "tab">
+                                A SpongeGrandma
+                            </P>
+                            <P class = "tab2">
+                                Has wrinkles
+                                <br/>
+                                Has a dress
+                                <br/>
+                                Has a unique hair color
+                                <br/>
+                                Wears glasses
+                                <br/>
+                                Has a unique personality
+                                <br/>
+                                Has a number of grandchildren visited in a day 
+                                <br/>
+                                Will knit sweaters
+                                <br/>
+                            </P>
+                            <P class = "tab">
+                                For a given Sponge Grandma
+                            </P>
+                            <P class = "tab2">
+                                She will be nice.
+                                <br/>
+                                She will wear glasses.
+                                <br/>
+                                She will be wearing a dress.
+                                <br/>
+                                She will have white hair.
+                                <br/>
+                                She will start off the day with no grandchildren who've visited.
+                                <br/>
+                                She will start off the day with 0 sweaters knit.
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            Public class SpongeGrandma extends Sponges{
+                            <P class = "tab">
+                                Boolean wrinkles;
+                                <br/>
+                                String dress;
+                                <br/>
+                                String haircolor;
+                                <br/>
+                                String personality;
+                                <br/>
+                                Boolean glasses;
+                                <br/>
+                                String personality;
+                                <br/>
+                                int grandChildrenVisited;
+                                <br/>
+                                int numberOfSweatersKnit;
+                                <br/>
+                                Sponges grandChildren;
+                                <br/><br/>
+                                Public SpongeGrandma(){
+                            </P>
+                            <P class = "tab2">
+                                personality = "nice";
+                                <br/>
+                                grandChildrenVisited= 0;
+                                <br/>
+                                numberOfSweaterKnit = 0;                                    
+                            </P>
+                            <P class = "tab">
+                                }
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "ff0000">
+                <P>
+                    We have introduced here the idea of subclasses. "Sponges"; was a class, and "SpongeGrandma" 
+                    <br/>
+                    a subclass of it.
+                </P>
+                <P>
+                    You may also be wondering why the publishers declared "Sponges grandChildren" in this 
+                    <br/>
+                    subclass. Think of it this way, if the grandma is going to have grandchildren visit her, the artists 
+                    <br/>
+                    have to know what a grandchild is. By declaring "Sponges grandChildren", her editor will know 
+                    <br/>
+                    that a grandchild is a type of sponge.
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    After the publishers have described what their sponge grandmas look like, they decided to 
+                    <br/>
+                    move on to some of the <B> methods </B> (remember those from a few pages ago?) that grandmas use 
+                    <br/>
+                    to knit sweaters. Being a quality production, the producers decide to allow the grandma to say 
+                    <br/>
+                    how many sweaters she has knit.
+                </P>
+            </font>
+            <table border="2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            Whenever the main plot says that a grandma has knit a sweater, the number of sweaters she has knit will go up by one.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "52f226">
+                <P>
+                    While this may not look any different than any of the things that we were doing before, you 
+                    <br/>
+                    should note that the publishers are specifying how one of their characters acts, rather than just 
+                    <br/>
+                    how he/she/it looks. You should also note that they are altering one of their variables here, the 
+                    <br/>
+                    variable "numberOfSweatersKnit". SInce their binders (classes) can contain information about 
+                    <br/>
+                    how their characters act, the publishers can create quite a bit of character development without 
+                    <br/>
+                    ever even touching their main plot page.
+                </P>
+            </font>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            knitSweaters
+                            <P class = "tab">
+                                Number of sweaters knit increases by one
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "c69517">
+                <P>
+                    Notice the pattern then has begun to emerge in the publishers' writing. What they have done 
+                    <br/>
+                    with this <B> method </B> is similar to how they treated variables in the past. First, they note what they 
+                    <br/>
+                    are going to describe (in this case a <B> method </B> called knitSweaters) and then, on the next line, 
+                    <br/>
+                    what the method will do when they <B> call </B> it in their <B> main </B> plot (<B> routine </B>).
+                </P>
+            </font>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            public void knitSweaters () {
+                                <P class = "tab">
+                                    numberOfSweatersKnit ++;
+                                </P>
+                                }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "ff0000">
+                <P>
+                    Although the publishers used quite a few strange symbols, their approach was straightforward 
+                    <br/>
+                    and consistent. The first thing that they did was naming the method "knitSweaters". Since the 
+                    <br/>
+                    method name is knitSweaters, the publishers figure that they should modify the grandma's 
+                    <br/>
+                    number of sweaters knit, in this case by adding one to it. That is what the "++" after 
+                    <br/>
+                    "numberOfSweatersKnit" does.
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    Now, the grandmas in the producers' tv shows are famous for being able to knit sweaters. 
+                    <br/>
+                    Hence, it's very difficult to see exactly how many sweaters the grandma has knit in her large 
+                    <br/>
+                    stack. The publishers decide that it's a good idea to allow their grandma to state how many 
+                    <br/>
+                    sweaters she has knit, so, they write a new method:
+                </P>
+            </font>
+            <table border="2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            If someone asks grandma how many sweaters she has knit, she will answer with the number of sweaters she has knit. 
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            howManySweatersKnit
+                            <P class = "tab">
+                                Tell them how many sweaters I have knit. 
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            public int howManySweatersKnit (){
+                            <P class = "tab">
+                                return numberOfSweaterKnit; 
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "ff0000">
+                <P>
+                    If you're wondering about that "int" in front of the "howManySweatersKnit()", the publishers 
+                    <br/>
+                    had to put that in because this <B> method </B> has a <B> return value </B>. In order to let the artists know what
+                    <br/> 
+                    sort of value the can expect the method to return, they specified "int" (for integer) in front of 
+                    <br/>
+                    the name of the method. Remember, their artists don't like surprises, and if they didn't tell the 
+                    <br/>
+                    artists what sort of variable this method was going to return, they'd get all hot and flustered. 
+                    <br/>
+                    (Now, we don't want that, do we?)
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    At this point the publishers' are pretty proud of themselves, having created a grandma that can 
+                    <br/>
+                    knit sweaters. However, just to make for a good closing, the publishers decide to have the 
+                    <br/>
+                    grandchildren visit the grandma. They set out to write one more method. What makes this 
+                    <br/>
+                    different than the other methods is that it needs information about someone other than the 
+                    <br/>
+                    grandma, namely the grandchild that is visiting. To allow for flexibility  (and a variety of 
+                    <br/>
+                    grandchildren), the publishers decide to leave the identity of the grandchild blank for now.
+                </P>
+            </font>
+            <table border="2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            If the grandchild is supposed to visit the grandma, visit the grandma and then add 
+                            one to the number of grandchildren visited. Then print out "Oh golly! (the 
+                            specified grandchild) has visited my old soul!"
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = 52f226>
+                <P>
+                    So now you can see the flexibility that the publishers have in writing their stories; they can leave 
+                    <br/>
+                    certain things as variables to be specified only when the plot is written. And by writing that the 
+                    <br/>
+                    grandchild will have a name, but not stating what it will be, that's just what they have done. 
+                    <br/>
+                    They have also used a print statement that will print out the information gathered by the 
+                    <br/>
+                    method as an event in their book. How easy!
+                </P>
+            </font>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            visitGrandma (name)
+                            <P class="tab">
+                                Add one to the number of grandchildren who have visited.
+                                <br/>
+                                print "Oh golly (name_grandchild) has visited my old soul!".
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            Public void visitGrandma (Sponge name){
+                            <P class = "tab">
+                                this.name = name;
+                                <br/>
+                                grandchildrenVisited++;
+                                <br/>
+                                System.out.print ("Oh golly" + name.identifyName () + "has visited the my old soul!")
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "ff0000">
+                <P>
+                    "Geez! I should have stayed with the green type," you're probably saying to yourself. Don't 
+                    <br/>
+                    worry. It looks much more than it is, and you probably understand most of it already. First, we 
+                    <br/>
+                    have the name of the method: "visitGrandma". No surprise there. Then, between those 
+                    <br/>
+                    parenthesis, we have "Sponge grandChild". What comes between those parenthesis is called an 
+                    <br/>
+                    argument. It helps make the method more specific. When the publishers start writing their, plot, 
+                    <br/>
+                    they will at some point want the grandchild to visit the grandma. But if they just write in the 
+                    <br/>
+                    plot "grandma.visitGrandma()", that wouldn't be very exciting for the viewer. Who has visited? 
+                    <br/>
+                    What was their name? Priding themselves on always having strong characters, the publishers 
+                    <br/>
+                    wants to add the name of the grandchild who is visiting. Hence, when their plot says 
+                    <br/>
+                    "visitGrandma", it will also say the name of the grandchild that is visiting as an argument. 
+                    <br/>
+                    "Sponges", which comes before "grandma", tells the artist that the thing visiting is a sponge. The
+                    <br/>
+                    artists don't like surprises, so knowing that it is a sponge visiting, rather than say, plankton, 
+                    <br/>
+                    reduces the guesswork on their hands.
+                </P>
+                <P>
+                    The next line is another attempt by the publishers to please their artists, who are being even 
+                    <br/>
+                    more picky than ever! Even though they have supplied the name of the grandchild as an 
+                    <br/>
+                    argument, their artists won't let them use it in the method until they have stated that the 
+                    <br/>
+                    "grandchild" that she declared as a "grandma" variable is equal to the vale given in the 
+                    <br/>
+                    method's argument.
+                </P>
+                <P>
+                    Having finally jumped through all of their artists' hoops (don't expect to understand all of that 
+                    <br/>
+                    right away, it took the publishers a couple of weeks!), the publishers get down to finishing the 
+                    <br/>
+                    rest of their method. Once the grandchild has visited the grandma, the variable 
+                    <br/>
+                    "grandChildrenVisited" will surely go up by one, so the producers put the same "++" after 
+                    <br/>
+                    grandChildVisited that they had put after "numberOfSweatersKnit" in the "knitSweaters" method.
+                </P>
+                <P>
+                    The stage being set, the publishers decide that it is time to let their readers know what is going 
+                    <br/>
+                    on. Hence the "system.out.println" statement. A bit wordy, but it let's their artists know that 
+                    <br/>
+                    what comes between those parentheses goes into the final plot of the episode: all the text they 
+                    <br/>
+                    put in between quotation marks. Why is the variable 'grandchild.identifyName()' then not in 
+                    <br/>
+                    quotation marks? Because it is not a literal, but rather an object's method. By keeping it out of 
+                    <br/>
+                    the quotation marks, the publisher lets their artists know that they have to for look for the 
+                    <br/>
+                    grandchild object (they would find out that it was of the "Sponges" class) then for the method 
+                    <br/>
+                    "identifyName" (they would see that it returned the grandchild's name). All of that for a 
+                    <br/>
+                    grandchild's name!
+                </P>
+                <P>
+                    Had they put grandChild.identifyName() inside of the quotation marks, their artists would have 
+                    <br/>
+                    drawn out the words in the final copy of the episode: "Oh golly grandChild.identifyName () has 
+                    <br/>
+                    visited the my old soul!". In order for their artists to substitute the variable name for the word
+                    <br/>
+                    name, the publishers close the quotation marks before they write it. The "+" lets the artists  
+                    <br/>
+                    know that the publishers want them to join the two statements.
+                </P>
+                <P>
+                    Lucky for you, the next page is just review.
+                </P>
+            </font>
+            <font color = "000000">
+                <P>
+                    At this point, it might be a good idea to review what the publishers overall description of 
+                    <br/>
+                    grandma looks like. None of this material is new, just a compilation of what we've gone over in 
+                    <br/>
+                    the past few pages. 
+                </P>
+            </font>
+            <table border="2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            <P>
+                                Sponge Grandmas are based on the idea of sponges, they are nearly identical except a few 
+                                small details that make them unique, namely wrinkles to indicate their old age, they wear a 
+                                dress, they have hair on their heads, they wear glasses, will have a unique personality, start 
+                                the day off with no sweaters knit, and the number of grandchildren that have visited that day.
+                            </P>
+                            <P>
+                                Whenever the main plot says that a grandma has knit a sweater, the number of sweaters she has knit will go up by one.
+                                <br/>
+                                If someone asks the grandma how many sweaters she has knit, she will answer with the number of sweaters she has knit. 
+                                <br/>
+                                If the grandchild visits the grandma, add one to the number of grandchildren visited. Then print out "Oh golly! (the specified grandchild) has visited my old soul!"
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            Grandmas extends the idea of Sponges.
+                            <P class="tab">
+                                A Grandma
+                            </P>
+                            <P class="tab2">
+                                Has wrinkles
+                                <br/>
+                                Has a dress
+                                <br/>
+                                Has a unique hair color
+                                <br/>
+                                Wears glasses
+                                <br/>
+                                Has a unique personality
+                                <br/>
+                                Has a number of grandchildren visited in a day 
+                                <br/>
+                                Will knit sweaters
+                            </P>
+                            <P class="tab">
+                                For a given Grandma,
+                            </P>
+                            <P class="tab2">
+                                She will be nice and compassionate.
+                                <br/>
+                                She will wear glasses.
+                                <br/>
+                                She will be wearing a dress.
+                                <br/>
+                                She will have whitehair.
+                                <br/>
+                                She will start off the day with no grandchildren who've visited.
+                                <br/>
+                                Will start off the day with 0 sweaters knit.
+                            </P>
+                            <P class="tab">
+                                knitSweaters
+                            </P>
+                            <P class="tab2">
+                                Number of sweaters knit increases by one
+                            </P>
+                            <P class="tab">
+                                howManySweatersKnit
+                            </P>
+                            <P class="tab2">
+                                Tell them how many sweaters I have done. 
+                            </P>
+                            <P class="tab">
+                                visitGrandma (name)
+                            </P>
+                            <P class="tab2">
+                                Add one to the number of grandchildren who have visited.
+                                <br/>
+                                print "Oh golly (name) has visited my old soul!".
+                            </P>
+                        </font>
+                    </td>
+                </tr>
+            </table>  
+            <br/>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            Public class SpongeGrandma extends Sponges{
+                            <P class="tab">
+                                Boolean wrinkles;
+                                <br/>
+                                Boolean dress;
+                                <br/>
+                                String haircolor;
+                                <br/>
+                                String look;
+                                <br/>
+                                String glasses;
+                                <br/>
+                                String personality;
+                                <br/>
+                                int grandChildrenVisited;
+                                <br/>
+                                int numberOfSweatersKnit;
+                                <br/>
+                                Sponges grandChildren
+                                <br/><br/>
+                                public SpongeGrandma(){
+                            </P>
+                            <P class="tab2">
+                                wrinkles= "true";
+                                <br/>
+                                dress= "true";
+                                <br/>
+                                hair= "white";    
+                                <br/>
+                                look = "compassionate";
+                                <br/>
+                                grandChildrenVisited= 0;
+                                <br/>
+                                numberOfSweaterKnit = 0;
+                            </P>
+                            <P class = "tab">
+                                }
+                                <br/><br/>
+                                public void knitSweaters () {
+                            </P>
+                            <P class="tab2">
+                                numberOfSweatersKnit ++;
+                            </P>
+                            <P class="tab">
+                                }
+                                <br/><br/>
+                                public int howManySweatersKnit (){
+                            </P>
+                            <P class="tab2">
+                                return numberOfSweaterKnit; 
+                            </P>
+                            <P class="tab">
+                                }
+                                <br/><br/>
+                                public void visitGrandma (Sponge grandChild){
+                            </P>
+                            <P class="tab2">
+                                this.grandChild = grandChild;
+                                <br/>
+                                grandchildVisited++;
+                                <br/>
+                                System.out.print ("Oh golly" + grandChild.identifyName () + "has visited the my old soul!")
+                            </P>
+                            <P class = "tab">
+                                }   
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <font color = "000000">
+                <P>
+                    All this work with Grandmas and sweaters has the publishers feeling better then ever. So, they 
+                    decide to develop the main plot.
+                </P>
+                <P>
+                    Finally, they set their pens to the sheet of paper labeled <B> main routine </B>.
+                </P>
+            </font>
+            <table border="2" bordercolor = "52f226" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "52f226">
+                            Here is the main plot of Visiting Grandma in Bikini Bottom: there is an Underwater Town 
+                            called Bikini Bottom. Bikini Bottom has 1 house and 3 sponges. There is a round grandma 
+                            sponge named Granny. Granny has wrinkles, white hair, doesn't wear glasses and has a frilly 
+                            dress. Spongebob is a male sponge. He is rectangular in shape. In our story, Granny starts out 
+                            by knitting a sweater. She then lets everyone know how many sweaters she's knit and then 
+                            her grandson, Spongebob visits.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "c69517" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "c69517">
+                            Here is the main plot of Visiting Grandma at Grandma's house; in the TV show Spongebob;
+                            <br/><br/>
+                            There is an UnderwaterTown called BikiniBottom;
+                            <P class="tab">
+                                BikiniBottom has one grandma;
+                                <br/>
+                                BikiniBottom has two sponges;
+                                <br/>
+                                BikiniBottom has one house;
+                            </P>
+                            There is a new grandma named Granny;
+                            <P class="tab">
+                                Granny has wrinkles;
+                                <br/>
+                                Granny has white hair;
+                                <br/>
+                                Granny doesn't wear glasses;
+                                <br/>
+                                Granny has a frilly dress;
+                                <br/>
+                                Granny is round in shape;                                    
+                            </P>
+                            There is a new Sponge named Spongebob;
+                            <P>
+                                Spongebob is male;
+                                <br/>
+                                Spongebob is rectangular in shape;                                
+                            </P>
+                            Granny knits a sweater;
+                            <br/>
+                            Granny tells us how many sweaters she's knit;
+                            <br/>
+                            Spongebob visits Granny;
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="2" bordercolor = "ff0000" style="width:550px">
+                <tr>
+                    <td>
+                        <font color = "ff0000">
+                            public class visitGrandma {
+                            <P class="tab">
+                                Public static void main (String arguments[]){
+                            </P>
+                            <P class="tab2">
+                                UnderwaterTown BikiniBottom = new UnderwaterTown ();
+                                <br/>
+                                BikiniBottom.numberOfHouses = 1;
+                                <br/>
+                                BikiniBottom.numberOfSponges = 2;
+                                <br/>
+                                BikiniBottom.numberOfGrandmas = 1;
+                                <br/><br/>
+                                SpongeGrandma Granny = new SpongeGrandma ();
+                                <br/>
+                                Granny.sex = "female";
+                                <br/>
+                                Granny.wrinkles = true;
+                                <br/>
+                                Granny.hairColour = "white";
+                                <br/>
+                                Granny.glasses = false;
+                                <br/>
+                                Granny.dress = "frilly";
+                                <br/>
+                                Granny.memorableShape = "round";
+                                <br/><br/>
+                                Sponge Spongebob = new Sponge();
+                                <br/>
+                                Spongebob.sex = "male";
+                                <br/>
+                                Spongebob.memorableShape = "rectangular";
+                                <br/><br/>
+                                Granny.knitSweater();
+                                <br/>
+                                System.out.println (Granny.numberOfSweatersKnit());
+                                <br/>
+                                Granny.visitGrandma (Spongebob);
+                            </P>
+                            <P class="tab">
+                                }
+                            </P>
+                            }
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </font>
+    </center>
+
+    </div>
+    </body>
+</html>

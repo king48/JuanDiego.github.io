@@ -1,0 +1,77 @@
+<!--
+JuanDiego Castano 
+Ms Kresteva
+05/10/2019
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recursion</title>
+  
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="img/codi.png" type="image/x-icon"> 
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js"></script>
+</head>
+<body>
+<div class="container"> 
+    <nav>
+      <a href="index.html">
+        <h4>My Portfolio</h4>
+      </a>
+      <ul>
+        <li><a href="References.html">References</a></li>
+        <li><a href="Recursion.html">Recursion</a></li>
+    
+        <li><a href="Arrays.html">Arrays</a>
+          <ul>
+            <li><a href="Arrays.html">Array and ArrayLists</a></li>
+            <li><a href="Search&Sort.html">Search and Sort </a></li>
+          </ul>
+        </li>
+        <li><a href="objectsinjava.html"> Object Oriented Programming </a>
+          <ul>
+            <li><a href="objectsinjava.html">Objects in Java</a></li>
+            <li><a href="Inheritance.html">Inheritance</a></li>
+            <li><a href="DontFearTheOOP.html">OOP Example</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">About Me</a> </li>
+      </ul>
+    </nav>
+  
+  <section class="portfolio" id="portfolio">
+    <h1 class="portfolio_header">Recursion</h1>
+  </section>
+  <section class="wrapper">
+    <h2 class="headers">Recursion Basics</h2>
+    <p class="text">
+      Recursion is one of the most complex ideas that we've done in this course, however, it is one of 
+      the most useful and once you got the hang of it, its not too difficult. Recursion is based off of 
+      having a base case. What recursion does is it is given some starting values, the method begins to call 
+      itself but it doesn't necessarily know  
+      where its going but it does know its getting closer to the base case. So for example, with ages, a 
+      Joe may know they're only 2 years older than Oliver - if Oliver is 6 then logically, Joe is 
+      8 years old. In this case Oliver was the base case the value that we knew and that decides the values before 
+      it. When it reaches the base case it can then backtrack and determine the values of the things it skipped over. 
+      If this explanation isn't good enough please look at the example below. 
+    </p>
+    <img src="img/Recursion.png" alt="" style="float: left; " length = "800px"width= "800px">
+    <h2 class = "headers-moved">Tips and Tricks</h2>
+    <p class="text">
+      You should avoid recursion at all costs if it does not significantly simplify your solution. 
+      For example in merge sort it is very useful, but for counting a number it may not be. Avoid 
+      recursion when it involves large local arrays, because this can cause a memory overflow. Remember 
+      recursion is best used for traversing directories, some sorting algorithms such as divide and conquer 
+      algorithms and merge sort. Unless you're doing things like these be it may be best to use an Iterative
+      solution that can end up using less memory, being more efficient and overall easier to write.
+ 
+    </p>
+  </section>
+  <footer class="footer">
+    <h4 class="footer_header">My Amazing Portfolio</h4>
+  </footer>
+</div>
+</body>
+</html>
+  
